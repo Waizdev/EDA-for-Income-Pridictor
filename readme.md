@@ -66,9 +66,8 @@ Classification Report
 Feature Importance Bar Chart
 
 👨‍💻 Author
-[Your Name] – AI Student @ UMT
-📫 Contact: your.email@example.com
-
+Syed Muhammad Waiz Rizvi – AI Student @ UMT
+📫 Contact: dragoXtrme666@gmail.com
 
 ---
 
