@@ -1,36 +1,82 @@
-# 📊 Income Predictor – Exploratory Data Analysis (EDA)
+# 📊 Income Predictor with EDA & Machine Learning
 
-This repository contains an in-depth exploratory data analysis (EDA) of the UCI Adult Income dataset. The analysis uncovers relationships between demographic features and income levels, serving as a foundation for income classification models.
-
----
-
-## 🗃️ Dataset Overview
-
-- **Source**: UCI Machine Learning Repository – [Adult Dataset](https://archive.ics.uci.edu/ml/datasets/adult)
-- **Total Records**: 32,000+
-- **Target Variable**: `income` (binary: `>50K`, `<=50K`)
+This project uses the `adult.csv` dataset to explore demographic factors and predict whether an individual's income exceeds $50K annually. It combines **exploratory data analysis (EDA)** and **machine learning (Random Forest Classifier)** for classification.
 
 ---
 
-## 🎯 Objectives
+## 🔍 Dataset
 
-- Analyze distributions of numerical and categorical features
-- Visualize key relationships and trends
-- Perform feature engineering (e.g., age grouping)
-- Generate insights to support predictive modeling
+- Source: UCI Machine Learning Repository
+- 32,000+ samples with features like age, education, workclass, marital status, and occupation
 
 ---
 
-## 📈 Visualizations Included
+## 🧪 EDA Tools
 
-- Age distribution histogram
-- Income by education level
-- Capital gain/loss distributions
+- `pandas`, `numpy`
+- `matplotlib`, `seaborn`
+
+**Highlights:**
+- Age group binning (e.g. Youth, Adult, Senior)
 - Correlation heatmap
-- Hours per week vs. income boxplot
-- Income class ratio pie chart
-
-All visualizations are saved in the `images/` folder.
+- Feature importance analysis
+- Income distribution & categorical analysis
 
 ---
 
+## 🤖 Machine Learning
+
+- Model: **Random Forest Classifier**
+- Pipeline: Label encoding → train-test split → fitting model
+- Metrics: Accuracy, Precision, Recall, Confusion Matrix
+
+---
+
+## 📁 Project Structure
+
+data/
+├── adult.csv # Original dataset
+
+eda/
+├── eda_analysis.ipynb # EDA notebook
+
+model/
+├── model_training.ipynb # ML notebook
+├── income_model.pkl # Trained model
+
+images/
+├── charts and visualizations
+
+---
+
+## 📝 How to Run
+
+1. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+Run eda.ipynb for data exploration
+
+Run model_training.ipynb to train the model and save it
+
+📸 Sample Output
+Confusion Matrix
+
+Classification Report
+
+Feature Importance Bar Chart
+
+👨‍💻 Author
+[Your Name] – AI Student @ UMT
+📫 Contact: your.email@example.com
+
+
+---
+
+### ✅ requirements.txt Example
+
+```txt
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
