@@ -56,13 +56,6 @@ images/
    pip install -r requirements.txt
 Run eda.ipynb for data exploration
 
-Run model_training.ipynb to train the model and save it
-
-📸 Sample Output
-Confusion Matrix
-
-Classification Report
-
 Feature Importance Bar Chart
 
 👨‍💻 Author
